@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:aliceblue;
+    text-align: center;
+    background-image: url(background.png);
+    background-size: cover;
+}
+.header{
+    backdrop-filter: blur(10px);
+    text-align: center;
+    font-size: 56;
+    color: aliceblue;
+    border-style: ridge;
+    border-color: wheat;
+    border: 2pxd;
+    border-radius: 5px;
+    background-color: rgb(169,169,169,0.5);
+
+}
+a{
+    color: blanchedalmond;
+}
+.page
+{
+    background-color: rgba(152, 143, 255, 0.404);
+    backdrop-filter: blur(10px);
+    height: 180px;
+    border-style: ridge;
+    border-color: wheat;
+}
+.title {
+    font-family: consolas;
+
+}
+.social{
+    background-color: rgba(0, 0, 0, 0.601);
+    backdrop-filter: blur(10px);
+    border-style: ridge;
+    border-color: rgba(0, 0, 0, 0.569);
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    width:100%;
+    text-align: left;
+    text-decoration: none;
+    word-spacing: 10px;
+}
+.datetime {
+    position:fixed;
+    font-family: 'segoe UI';
+    right:1%;
+    text-align: center;
+}
+.Updates{
+    background-color: rgba(0, 191, 255, 0.322);
+    backdrop-filter: blur(10px);
+    border-style: ridge;
+    border-radius: 5px;
+    border-color: wheat;
+}
+.watermark{
+    position: fixed;
+    bottom:5%;
+    right: 0%;
+    text-align: right;
+}
