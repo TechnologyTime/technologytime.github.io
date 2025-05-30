@@ -6,8 +6,9 @@
         <link rel="stylesheet" href="main.css">
         <script>
             function windows() {
-                alert('This button does nothing for now');
+                     document.getElementById('start').classList.toggle("startclicked");
             }
+
         </script>
     </head>
     <body>
@@ -25,10 +26,21 @@
                 <h1>Updates from TechnologyTime</h1>
                 <p>No updates currently.</p>
             </div>
- 
+             <div class="Start" id="start">
+                <div class="button1">
+                <a href="downloads/index.html" class="zmdi zmdi-wallpaper" style="text-decoration: none;"></a>
+                </div>
+            <div class="button2">
+                <a href="https://github.com/TechnologyTime/technologytime.github.io/" class="zmdi zmdi-github" style="text-decoration: none;"></a>
+                </div>
+                <div class="button3">
+                <a href="#" class="zmdi zmdi-home" style="text-decoration: none;"></a>
+                </div>
+            </div>
             <div class="watermark">
                 <p>Still under construction <br>
                 Wallpaper credits to Getty Images/Microsoft</p>
+                <br>
             </div>
             <div class="social">
                 <a href="#" class="zmdi zmdi-windows" style="font-size: 50px; text-decoration: none;" onclick="windows()"></a>
@@ -44,5 +56,6 @@
             <div class="ytembed">
                 <h1>Most viewed video: </h1><iframe width="480" height="240" src="https://www.youtube-nocookie.com/embed/vQNknF1Tfcg?si=oKC3x-TWqqoFK65n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
+
     </body>
 </html>
