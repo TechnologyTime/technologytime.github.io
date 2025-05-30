@@ -3,6 +3,7 @@ body {
     color: aliceblue;
     text-align: center;
     background-image: url('Background.png');
+    background-size: cover;
 }
 .header{
     backdrop-filter: blur(10px);
