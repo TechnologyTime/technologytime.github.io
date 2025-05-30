@@ -2,7 +2,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:aliceblue;
     text-align: center;
-    background-size: cover;
 }
 .header{
     backdrop-filter: blur(10px);
