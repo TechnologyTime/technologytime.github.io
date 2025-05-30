@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:aliceblue;
     text-align: center;
-    background-image: url('background.png');
+    background-image: url(background.png);
     background-size: cover;
 }
 .header{
@@ -28,9 +28,63 @@ a{
     border-style: ridge;
     border-color: wheat;
 }
-.title {
-    font-family: consolas;
-
+p{
+    font-size: 20px;
+    font-weight: 500;
+        background-color: rgba(73, 249, 255, 0.302);
+    backdrop-filter: blur(10px);
+}
+.wallpapers{
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.302);
+    backdrop-filter: blur(3px);
+    display: block;
+}
+.button1{
+    padding: 50px;
+    position: fixed;
+    left: 45px;
+    top: 45px;
+    height: 80px;
+    width: 80px;
+    background-color: rgba(48, 48, 48, 0.178);
+    backdrop-filter: blur(3px);
+     transition: all 0.2s ease;
+}
+.Start{
+    background-color: rgba(0, 0, 0, 0.601);
+    backdrop-filter: blur(10px);
+    z-index: 8;
+    height: 80%;
+    width: 50%;
+    position:fixed;
+    bottom: 7%;
+    font-size: 80px;
+    text-align: left;
+    display: none;
+    border-color: rgb(46, 45, 43);
+    border-radius: 5px;
+    
+}
+.startclicked{
+    display: block;
+}
+.button1:hover{
+    background-color: rgba(176, 176, 176, 0.395);
+}
+.button2{
+    padding: 50px;
+    position: fixed;
+    left: 235px;
+    top: 45px;
+    height: 80px;
+    width: 80px;
+    background-color: rgba(48, 48, 48, 0.178);
+    backdrop-filter: blur(3px);
+     transition: all 0.2s ease;
+}
+.button2:hover{
+    background-color: rgba(176, 176, 176, 0.395);
 }
 .social{
     background-color: rgba(0, 0, 0, 0.601);
@@ -52,72 +106,12 @@ a{
     right:1%;
     text-align: center;
 }
-.Updates{
-    background-color: rgba(0, 191, 255, 0.322);
-    backdrop-filter: blur(10px);
-    border-style: ridge;
-    border-radius: 5px;
-    border-color: wheat;
-}
 .watermark{
     position: fixed;
     bottom:5%;
     right: 0%;
     text-align: right;
     z-index: 9;
-}
-.ytembed{
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.601);
-    backdrop-filter: blur(10px);
-    height: max-content;
-    width: 100%;
-}
-.Start{
-    background-color: rgba(0, 0, 0, 0.601);
-    backdrop-filter: blur(10px);
-    z-index: 8;
-    height: 80%;
-    width: 50%;
-    position:fixed;
-    bottom: 7%;
-    font-size: 80px;
-    text-align: left;
-    display: none;
-    border-color: rgb(46, 45, 43);
-    border-radius: 5px;
-    
-}
-.button1{
-    padding: 50px;
-    position: fixed;
-    left: 45px;
-    top: 45px;
-    height: 80px;
-    width: 80px;
-    background-color: rgba(48, 48, 48, 0.178);
-    backdrop-filter: blur(3px);
-     transition: all 0.2s ease;
-}
-.startclicked{
-    display: block;
-}
-.button1:hover{
-    background-color: rgba(176, 176, 176, 0.395);
-}
-.button2{
-    padding: 50px;
-    position: fixed;
-    left: 235px;
-    top: 45px;
-    height: 80px;
-    width: 80px;
-    background-color: rgba(48, 48, 48, 0.178);
-    backdrop-filter: blur(3px);
-     transition: all 0.2s ease;
-}
-.button2:hover{
-    background-color: rgba(176, 176, 176, 0.395);
 }
 .button3{
     padding: 50px;
