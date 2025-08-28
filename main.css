@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:aliceblue;
     text-align: center;
-    background-image: url(background.png);
+    background-image: url('./background.png');
     background-size: cover;
 }
 .header{
@@ -24,9 +24,14 @@ a{
 {
     background-color: rgba(152, 143, 255, 0.404);
     backdrop-filter: blur(10px);
-    height: 180px;
+    height: 300px;
     border-style: ridge;
     border-color: wheat;
+}
+.page > .discord-info {
+    position: static;
+    align-items: center;
+    bottom: 30%;
 }
 .title {
     font-family: consolas;
@@ -34,7 +39,7 @@ a{
 }
 .social{
     background-color: rgba(0, 0, 0, 0.601);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
     border-style: ridge;
     border-color: rgba(0, 0, 0, 0.569);
     position: fixed;
@@ -43,8 +48,8 @@ a{
     width:100%;
     text-align: left;
     text-decoration: none;
-    word-spacing: 10px;
-    z-index: 9;
+    word-spacing: 5px;
+    z-index: 8;
 }
 .datetime {
     position:fixed;
@@ -65,13 +70,6 @@ a{
     right: 0%;
     text-align: right;
     z-index: 9;
-}
-.ytembed{
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.601);
-    backdrop-filter: blur(10px);
-    height: max-content;
-    width: 100%;
 }
 .Start{
     background-color: rgba(0, 0, 0, 0.601);
@@ -98,6 +96,7 @@ a{
     background-color: rgba(48, 48, 48, 0.178);
     backdrop-filter: blur(3px);
      transition: all 0.2s ease;
+
 }
 .startclicked{
     display: block;
@@ -132,4 +131,45 @@ a{
 }
 .button3:hover{
     background-color: rgba(176, 176, 176, 0.395);
+}
+.social > a{
+         transition: all 0.2s ease;
+         border-radius: 5px;
+         padding: 5px;
+         margin-left: 5px;
+         height: 50px;
+         border-style: dotted;
+         border-color: rgba(48, 48, 48, 0.178);
+         height: max-content;
+}
+.social > a:hover{
+       background-color: rgba(176, 176, 176, 0.395);
+        border-radius: 5px;
+         border-style: groove;
+}
+.datetime > a {
+    text-decoration: none;
+    color: white;
+}
+.recommend{
+    z-index: 10;
+    position: absolute;
+    background-color: rgba(247, 249, 118, 0.692);
+    left: 90%;
+    color: rgb(29, 29, 29);
+    bottom: 20%;
+    backdrop-filter: blur(10px);
+    border-radius: 3px;
+    border-color: aqua;
+    border-style: groove;
+}
+.recommend > a{
+        text-decoration: none;
+        background-color: rgba(136, 0, 255, 0.503);
+        color: rgb(0, 2, 127);
+       transition: all 0.2s ease;
+}
+.recommend > a:hover{
+        background-color: rgba(53, 56, 255, 0.578);
+        color: rgba(0, 255, 123, 0.503);
 }
