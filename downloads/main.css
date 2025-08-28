@@ -1,8 +1,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: aliceblue;
+    color:aliceblue;
     text-align: center;
-    background-image: url('Background.png');
+    background-image: url('./background.png');
     background-size: cover;
 }
 .header{
@@ -24,32 +24,52 @@ a{
 {
     background-color: rgba(152, 143, 255, 0.404);
     backdrop-filter: blur(10px);
-    height: 180px;
+    height: 300px;
     border-style: ridge;
     border-color: wheat;
 }
-p{
-    font-size: 20px;
-    font-weight: 500;
-        background-color: rgba(73, 249, 255, 0.302);
-    backdrop-filter: blur(10px);
+.page > .discord-info {
+    position: static;
+    align-items: center;
+    bottom: 30%;
 }
-.wallpapers{
-    font-size: 30px;
-    background-color: rgba(255, 255, 255, 0.302);
-    backdrop-filter: blur(3px);
-    display: block;
+.title {
+    font-family: consolas;
+
 }
-.button1{
-    padding: 50px;
+.social{
+    background-color: rgba(0, 0, 0, 0.601);
+    backdrop-filter: blur(30px);
+    border-style: ridge;
+    border-color: rgba(0, 0, 0, 0.569);
     position: fixed;
-    left: 45px;
-    top: 45px;
-    height: 80px;
-    width: 80px;
-    background-color: rgba(48, 48, 48, 0.178);
-    backdrop-filter: blur(3px);
-     transition: all 0.2s ease;
+    bottom: 0%;
+    left: 0%;
+    width:100%;
+    text-align: left;
+    text-decoration: none;
+    word-spacing: 5px;
+    z-index: 8;
+}
+.datetime {
+    position:fixed;
+    font-family: 'segoe UI';
+    right:1%;
+    text-align: center;
+}
+.Updates{
+    background-color: rgba(0, 191, 255, 0.322);
+    backdrop-filter: blur(10px);
+    border-style: ridge;
+    border-radius: 5px;
+    border-color: wheat;
+}
+.watermark{
+    position: fixed;
+    bottom:5%;
+    right: 0%;
+    text-align: right;
+    z-index: 9;
 }
 .Start{
     background-color: rgba(0, 0, 0, 0.601);
@@ -65,6 +85,18 @@ p{
     border-color: rgb(46, 45, 43);
     border-radius: 5px;
     
+}
+.button1{
+    padding: 50px;
+    position: fixed;
+    left: 45px;
+    top: 45px;
+    height: 80px;
+    width: 80px;
+    background-color: rgba(48, 48, 48, 0.178);
+    backdrop-filter: blur(3px);
+     transition: all 0.2s ease;
+
 }
 .startclicked{
     display: block;
@@ -86,33 +118,6 @@ p{
 .button2:hover{
     background-color: rgba(176, 176, 176, 0.395);
 }
-.social{
-    background-color: rgba(0, 0, 0, 0.601);
-    backdrop-filter: blur(10px);
-    border-style: ridge;
-    border-color: rgba(0, 0, 0, 0.569);
-    position: fixed;
-    bottom: 0%;
-    left: 0%;
-    width:100%;
-    text-align: left;
-    text-decoration: none;
-    word-spacing: 10px;
-    z-index: 9;
-}
-.datetime {
-    position:fixed;
-    font-family: 'segoe UI';
-    right:1%;
-    text-align: center;
-}
-.watermark{
-    position: fixed;
-    bottom:5%;
-    right: 0%;
-    text-align: right;
-    z-index: 9;
-}
 .button3{
     padding: 50px;
     position: fixed;
@@ -126,4 +131,45 @@ p{
 }
 .button3:hover{
     background-color: rgba(176, 176, 176, 0.395);
+}
+.social > a{
+         transition: all 0.2s ease;
+         border-radius: 5px;
+         padding: 5px;
+         margin-left: 5px;
+         height: 50px;
+         border-style: dotted;
+         border-color: rgba(48, 48, 48, 0.178);
+         height: max-content;
+}
+.social > a:hover{
+       background-color: rgba(176, 176, 176, 0.395);
+        border-radius: 5px;
+         border-style: groove;
+}
+.datetime > a {
+    text-decoration: none;
+    color: white;
+}
+.recommend{
+    z-index: 10;
+    position: absolute;
+    background-color: rgba(247, 249, 118, 0.692);
+    left: 90%;
+    color: rgb(29, 29, 29);
+    bottom: 20%;
+    backdrop-filter: blur(10px);
+    border-radius: 3px;
+    border-color: aqua;
+    border-style: groove;
+}
+.recommend > a{
+        text-decoration: none;
+        background-color: rgba(136, 0, 255, 0.503);
+        color: rgb(0, 2, 127);
+       transition: all 0.2s ease;
+}
+.recommend > a:hover{
+        background-color: rgba(53, 56, 255, 0.578);
+        color: rgba(0, 255, 123, 0.503);
 }
