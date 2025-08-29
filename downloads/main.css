@@ -151,25 +151,21 @@ a{
     text-decoration: none;
     color: white;
 }
-.recommend{
-    z-index: 10;
-    position: absolute;
-    background-color: rgba(247, 249, 118, 0.692);
-    left: 90%;
-    color: rgb(29, 29, 29);
-    bottom: 20%;
-    backdrop-filter: blur(10px);
-    border-radius: 3px;
-    border-color: aqua;
-    border-style: groove;
+@media screen and (max-width: 768px) {
+div.start{width: 50%;}
+div.button2{
+    left: 5%;
+    top: 35%;
 }
-.recommend > a{
-        text-decoration: none;
-        background-color: rgba(136, 0, 255, 0.503);
-        color: rgb(0, 2, 127);
-       transition: all 0.2s ease;
+div.button1{
+    left: 5%;
+    top: 45px;
 }
-.recommend > a:hover{
-        background-color: rgba(53, 56, 255, 0.578);
-        color: rgba(0, 255, 123, 0.503);
+div.button3{
+    left: 5%;
+    top: 63.5%;
+}
+}
+.norecommend{
+    display: none;
 }
