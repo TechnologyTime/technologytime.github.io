@@ -155,22 +155,75 @@ a{
     z-index: 10;
     position: absolute;
     background-color: rgba(247, 249, 118, 0.692);
-    left: 90%;
+    left: 80%;
     color: rgb(29, 29, 29);
     bottom: 20%;
     backdrop-filter: blur(10px);
     border-radius: 3px;
     border-color: aqua;
     border-style: groove;
+       animation: anistart 5s ease-in-out;
+    display: block;
 }
 .recommend > a{
         text-decoration: none;
         background-color: rgba(136, 0, 255, 0.503);
         color: rgb(0, 2, 127);
        transition: all 0.2s ease;
+
 }
 .recommend > a:hover{
         background-color: rgba(53, 56, 255, 0.578);
         color: rgba(0, 255, 123, 0.503);
 }
+@keyframes anistart {
+    0%{opacity: 2%;}
+    100%{opacity: 100%;}
+}
+.x{
+    position: inherit;
+    right: 0%;
+    cursor: default;
+    background-color: rgba(0, 255, 255, 0.442);
+    width: 100%;
+    text-align: right;
+    margin-right: 0%;
+}
+.x > a{
+    color: rgb(173, 173, 173);
+    margin: 2%;
+    height: 10%;
+    width: 10%;
+    background-color: rgb(185, 0, 0);
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: groove;
+    border-color: antiquewhite;
+    transition: all 0.2s ease;
+}
+.x > a:hover{
+    background-color: rgb(255, 107, 107);
+    border-color: aqua;
+    box-shadow: aqua 100px;
+}
+@media screen and (max-width: 768px) {
+div.start{width: 50%;}
+div.button2{
+    left: 5%;
+    top: 35%;
+}
+div.button1{
+    left: 5%;
+    top: 45px;
+}
+div.button3{
+    left: 5%;
+    top: 63.5%;
+}
+}
+.norecommend{
+    display: none;
+}
+
 
