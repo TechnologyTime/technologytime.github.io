@@ -64,12 +64,13 @@ a{
     border-radius: 5px;
     border-color: wheat;
 }
-.watermark{
+.watermark{     
     position: fixed;
     bottom:5%;
     right: 0%;
     text-align: right;
     z-index: 9;
+    opacity: 80%;
 }
 .Start{
     background-color: rgba(0, 0, 0, 0.601);
@@ -82,8 +83,10 @@ a{
     font-size: 80px;
     text-align: left;
     display: none;
-    border-color: rgb(46, 45, 43);
+    border-color: rgba(51, 50, 50, 0.315);
     border-radius: 5px;
+    border-style: ridge;
+    transition: all 0.5s ease;
     
 }
 .button1{
@@ -95,11 +98,13 @@ a{
     width: 80px;
     background-color: rgba(48, 48, 48, 0.178);
     backdrop-filter: blur(3px);
-     transition: all 0.2s ease;
+     transition: all 0.2s ease-in-out;
 
 }
 .startclicked{
     display: block;
+    animation: opened 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .button1:hover{
     background-color: rgba(176, 176, 176, 0.395);
@@ -109,6 +114,7 @@ a{
     position: fixed;
     left: 235px;
     top: 45px;
+
     height: 80px;
     width: 80px;
     background-color: rgba(48, 48, 48, 0.178);
@@ -123,6 +129,7 @@ a{
     position: fixed;
     left: 425px;
     top: 45px;
+
     height: 80px;
     width: 80px;
     background-color: rgba(48, 48, 48, 0.178);
@@ -140,7 +147,8 @@ a{
          height: 50px;
          border-style: dotted;
          border-color: rgba(48, 48, 48, 0.178);
-         height: max-content;
+         height: max-content; 
+         animation: opened 0.5s ease-in-out;
 }
 .social > a:hover{
        background-color: rgba(176, 176, 176, 0.395);
@@ -162,7 +170,7 @@ a{
     border-radius: 3px;
     border-color: aqua;
     border-style: groove;
-       animation: anistart 5s ease-in-out;
+       animation: anistart 2.5s ease-in-out;
     display: block;
 }
 .recommend > a{
@@ -207,6 +215,20 @@ a{
     border-color: aqua;
     box-shadow: aqua 100px;
 }
+@media screen and (max-width: 1366px) {
+div.button2{
+left: 5%;
+top: 35%;
+}
+div.button1{
+    left: 5%;
+    top: 45px;
+}
+div.button3{
+    left: 5%;
+    top: 63.5%;
+}
+}
 @media screen and (max-width: 768px) {
 div.start{width: 50%;}
 div.button2{
@@ -221,9 +243,38 @@ div.button3{
     left: 5%;
     top: 63.5%;
 }
+div.header{
+    font-size: 36;
+}
+div.watermark{
+    font-size: 0;
+}
+div.recommend{
+    display: none;
+}
 }
 .norecommend{
     display: none;
+}
+@keyframes opened{
+    0%{
+        opacity: 0%;
+        bottom: 0%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        bottom: 7%;
+    } 
+}
+@keyframes socialani {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 8%;
+    }
 }
 
 
