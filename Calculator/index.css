@@ -131,3 +131,65 @@ input[type="button"]:hover{
 .head2{
     font-family: 'Comic Sans MS', cursive, sans-serif;
 }
+.bg3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.bg3close{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgba(218, 255, 107, 0.566);
+    color: rgb(92, 92, 92);
+    border: none;
+    cursor: not-allowed;
+    transition: background-color 0.2s ease;
+}
+.popup2{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 238, 255);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.bg3buy{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgba(191, 255, 0, 0.927);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.bg3buy:hover{
+    background-color: rgb(255, 255, 0);
+    border: 0px solid rgb(0, 0, 0);
+    transition: background-color 0.2s ease;
+}
+.footer{
+    padding: 3px;
+    background-color: rgba(255, 90, 90, 0.448);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    font-size: 14px;
+    color: rgb(50, 50, 50);
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 50%;
+    transform: translate(50%);
+    text-shadow: 10px 3px 10px rgb(2, 2, 2);
+}
+.footer a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 10px;
+}
