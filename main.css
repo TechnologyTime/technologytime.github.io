@@ -150,6 +150,21 @@ a{
          height: max-content; 
          animation: opened 0.5s ease-in-out;
 }
+.button4{
+    padding: 50px;
+    position: fixed;
+    left: 615px;
+    top: 45px;
+
+    height: 80px;
+    width: 80px;
+    background-color: rgba(48, 48, 48, 0.178);
+    backdrop-filter: blur(3px);
+     transition: all 0.2s ease;
+}
+.button4:hover{
+    background-color: rgba(176, 176, 176, 0.395);
+}
 .social > a:hover{
        background-color: rgba(176, 176, 176, 0.395);
         border-radius: 5px;
@@ -215,21 +230,7 @@ a{
     border-color: aqua;
     box-shadow: aqua 100px;
 }
-.button4{
-    padding: 50px;
-    position: fixed;
-    left: 615px;
-    top: 45px;
 
-    height: 80px;
-    width: 80px;
-    background-color: rgba(48, 48, 48, 0.178);
-    backdrop-filter: blur(3px);
-     transition: all 0.2s ease;
-}
-.button4:hover{
-    background-color: rgba(176, 176, 176, 0.395);
-}
 @media screen and (max-width: 1366px) {
 div.button2{
 left: 5%;
@@ -302,6 +303,7 @@ div.recommend{
         height: 8%;
     }
 }
+
 
 
 
