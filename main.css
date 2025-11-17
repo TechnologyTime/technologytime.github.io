@@ -215,6 +215,21 @@ a{
     border-color: aqua;
     box-shadow: aqua 100px;
 }
+.button4{
+    padding: 50px;
+    position: fixed;
+    left: 615px;
+    top: 45px;
+
+    height: 80px;
+    width: 80px;
+    background-color: rgba(48, 48, 48, 0.178);
+    backdrop-filter: blur(3px);
+     transition: all 0.2s ease;
+}
+.button4:hover{
+    background-color: rgba(176, 176, 176, 0.395);
+}
 @media screen and (max-width: 1366px) {
 div.button2{
 left: 5%;
@@ -227,6 +242,10 @@ div.button1{
 div.button3{
     left: 5%;
     top: 63.5%;
+}
+div.button4{
+    left: 40%;
+    top: 45px;
 }
 }
 @media screen and (max-width: 768px) {
@@ -242,6 +261,13 @@ div.button1{
 div.button3{
     left: 5%;
     top: 63.5%;
+}
+div.button4{
+    left: 5%;
+    top: 78.5%;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
 }
 div.header{
     font-size: 36;
@@ -276,5 +302,6 @@ div.recommend{
         height: 8%;
     }
 }
+
 
 
