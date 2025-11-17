@@ -18,7 +18,9 @@
                     display.value += "-";
                 }
             }
-
+            setTimeout(function() {
+                document.getElementsByClassName('bg3')[0].style.display='block';
+            }, 20000);
         </script>    
         </head>
         <body>
@@ -48,6 +50,17 @@
                 <button onclick="document.getElementsByClassName('bg2')[0].style.display='none'">Close</button>
             </div>
         </div>
+        <div class="bg3" style="display: none;">
+            <div class="popup2">
+            <h1>HEY YOU! TIME LIMIT EXCEEDED!</h1>
+            <p>Did your siblings tell you that I was wastin' up your time?<br>  
+               Oh, now you're wastin' mine.<br>
+               Buy Premium Calculator to avoid interruptions.<br>
+                <i>All in good time.</i></p>
+            <button class="bg3close" onclick="document.getElementsByClassName('bg1')[0].style.display='none'" disabled>Close</button>
+            <button class="bg3buy" onclick="window.location.href='https://www.youtube.com/watch?v=xvFZjo5PgG0'">Buy Now</button>
+            </div>
+        </div>
             <div class="box">
                 <div class="main">
                     <p></p>
@@ -74,6 +87,9 @@
                     <input type="button" value="=" class="minus" onclick="document.getElementsByClassName('bg2')[0].style.display='block'">
                     </div>
             </div>
+            <div class="footer">
+                <p>Copyright © 2024 TechnologyTime Productions. All rights reserved.</p>
+                <a href="technologytime.github.io">Home</a>
+            </div>
     </body>
-
 </html>
