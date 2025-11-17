@@ -139,17 +139,6 @@ a{
 .button3:hover{
     background-color: rgba(176, 176, 176, 0.395);
 }
-.social > a{
-         transition: all 0.2s ease;
-         border-radius: 5px;
-         padding: 5px;
-         margin-left: 5px;
-         height: 50px;
-         border-style: dotted;
-         border-color: rgba(48, 48, 48, 0.178);
-         height: max-content; 
-         animation: opened 0.5s ease-in-out;
-}
 .button4{
     padding: 50px;
     position: fixed;
@@ -164,6 +153,17 @@ a{
 }
 .button4:hover{
     background-color: rgba(176, 176, 176, 0.395);
+}
+.social > a{
+         transition: all 0.2s ease;
+         border-radius: 5px;
+         padding: 5px;
+         margin-left: 5px;
+         height: 50px;
+         border-style: dotted;
+         border-color: rgba(48, 48, 48, 0.178);
+         height: max-content; 
+         animation: opened 0.5s ease-in-out;
 }
 .social > a:hover{
        background-color: rgba(176, 176, 176, 0.395);
@@ -254,14 +254,23 @@ div.start{width: 50%;}
 div.button2{
     left: 5%;
     top: 35%;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
 }
 div.button1{
     left: 5%;
     top: 45px;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
 }
 div.button3{
     left: 5%;
-    top: 63.5%;
+    top: 58.5%;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
 }
 div.button4{
     left: 5%;
@@ -303,6 +312,7 @@ div.recommend{
         height: 8%;
     }
 }
+
 
 
 
