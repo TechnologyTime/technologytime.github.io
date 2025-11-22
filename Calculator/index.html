@@ -3,6 +3,7 @@
         <title>Smart Calculator!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="index.css">
+
         <script>
             function addPlus() {
                 const display = document.getElementById('display');
@@ -21,6 +22,37 @@
             setTimeout(function() {
                 document.getElementsByClassName('bg3')[0].style.display='block';
             }, 20000);
+            function nightmode() {
+                document.body.classList.toggle("dark-mode");
+                document.querySelector('.box').classList.toggle("dark-mode");
+                document.querySelector('input').classList.toggle("dark-mode");
+                const buttons = document.querySelectorAll('input[type="button"]');
+                buttons.forEach(button => {
+                    button.classList.toggle("dark-mode");
+                });
+                const heads = document.querySelectorAll('.head');
+                heads.forEach(head => {
+                    head.classList.toggle("dark-mode");
+                });
+                const footers = document.querySelectorAll('.footer');
+                footers.forEach(footer => {
+                    footer.classList.toggle("dark-mode");
+                });
+                const popups = document.querySelectorAll('.popup, .popup2, .popup_capcha');
+                popups.forEach(popup => {
+                    popup.classList.toggle("dark-mode");
+                });
+                const buttons2 = document.querySelectorAll('.bg3close, .bg3buy, .popup button');
+                buttons2.forEach(button => {
+                    button.classList.toggle("dark-mode");
+                });
+                const text = document.getElementsByClassName('nightmode')[0];
+                if (document.body.classList.contains("dark-mode")) {
+                    text.value = "☀︎";
+                } else {
+                    text.value = "⏾";
+                }
+            }
         </script>    
         </head>
         <body>
@@ -53,7 +85,7 @@
         <div class="bg3" style="display: none;">
             <div class="popup2">
             <h1>HEY YOU! TIME LIMIT EXCEEDED!</h1>
-            <p>Did your siblings tell you that I was wastin' up your time?<br>  
+            <p>Did your parents tell you that I was wastin' up your time?<br>  
                Oh, now you're wastin' mine.<br>
                Buy Premium Calculator to avoid interruptions.<br>
                 <i>All in good time.</i></p>
@@ -85,14 +117,13 @@
                     <input type="button" value="*" class="product" onclick="document.getElementsByClassName('bg1')[0].style.display='block'">
                     <input type="button" value="/" class="divide" onclick="document.getElementsByClassName('bg1')[0].style.display='block'">
                     <input type="button" value="=" class="minus" onclick="document.getElementsByClassName('bg2')[0].style.display='block'">
+                    <input type="button" value="⏾" class="nightmode" onclick="nightmode()">
                     </div>
             </div>
             <div class="footer">
-                <p>Copyright © 2024 TechnologyTime Productions. All rights reserved.</p>
                 <p>This program is purely for enterainment purposes. Please don't copy what I did.</p>
-                <a href="https://technologytime.github.io">Home</a>
+                <p>Copyright © 2024 TechnologyTime Productions. All rights reserved.</p>
+                <a href="technologytime.github.io">Home</a>
             </div>
     </body>
 </html>
-
-
