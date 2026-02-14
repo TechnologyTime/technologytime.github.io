@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Notepad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <script>
+
+    </script>
+    <div class="header">
+        <h1>Notepad Platinum</h1>
+    </div>
+    <div class="toolbar">
+        <button class="file" id="file">File</button>
+        <div class="dropdown-content" id="dropdown-content">
+            <li><a href="#" onclick="document.getElementById('notepad-textarea').value = ''; document.getElementById('dropdown-content').classList.toggle('show');">New File</a></li>
+            <li><a href="#" onclick="Open()">Open</a></li>
+            <li><a href="#" onclick="Open()">Save</a></li>
+            <li><a href="#" class="save-as" onclick="Open()"><span>Save As</span></a></li>
+            <li><a href="#" onclick="Open()">Exit</a></li>
+        </div>
+        <button class="edit" onclick="Open()">Edit</button>
+    </div>
+    <div class="notepad">
+        <textarea id="notepad-textarea" placeholder="Start typing..."></textarea>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="popup-title">Introduction</span>
+            <span class="close" id="close"
+                onclick="document.getElementById('popup').style.display='none';">&times;</span>
+            <br>
+            <div class="popup-content-body">
+                <p>Welcome to Notepad Platinum! Explore the features of this VERY advanced text editor. We keep promises
+                    that we won't include any AI features and bugs as Microsoft does! What you're waiting for? Try now!
+                    Click the close button.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>This program is purely for enterainment purposes. Please don't copy what I did.</p>
+        <p>Copyright © 2026 TechnologyTime Productions. All rights reserved.</p>
+        <a href="technologytime.github.io">Home</a>
+    </div>
+</body>
+
+</html>
