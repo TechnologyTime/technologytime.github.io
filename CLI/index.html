@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>CLI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title">Command Prompt (Hacker edition)</div>
+            <div class="window-controls">
+                <button class="minimize">_</button>
+                <button class="maximize" onclick="" disabled="true">[]</button>
+                <button class="close" onclick="document.querySelector('.window').style.display = 'none';">X</button>
+            </div>
+        </div>
+        <textarea id="cli" spellcheck="false">C:\Users\TrustedInstaller></textarea>
+    </div>
+    <script src="../script.js"></script>
+    <div class="windows-error-reporting">
+        <div class="title-bar">
+            <img src="werfault.ico" alt="WER Fault Icon" class="wer-icon">
+            <div class="title">Command Prompt (Hacker edition)</div>
+            <div class="window-controls">
+                <button class="close">X</button>
+            </div>
+        </div>
+        <div class="contents">
+            <p class="wer-header">Command Prompt (Hacker edition) has stopped working.</p>
+            <p class="wer-desc">A problem caused the program to stop working correctly. Windows will close the program and notify you if
+                a solution is available.</p>
+        </div>
+        <div class="wer-footer">
+            <button class="wer-close" onclick="window.location.href = 'about://blank#blocked';">Close program</button>
+    </div>
+</body>
+
+</html>

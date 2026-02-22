@@ -1,0 +1,156 @@
+#cli{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #0f0;
+    font-family: monospace;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    resize: none;
+    transition: ease-in-out 500ms;
+}
+.window {
+    width: 100%;
+    height: 99%;
+    border: 1px solid #0f0;
+    margin: 1px auto;
+    display: flex;
+    flex-direction: column;
+}
+.window-controls {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    right: 10px;
+}
+.title-bar {
+    background-color: rgba(132, 146, 255, 0.215);
+    backdrop-filter: blur(5px);
+    color: #ffffff;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    transition: 50ms ease-in-out;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.window-controls > button{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.close {
+    background: linear-gradient(180deg, rgba(129, 0, 0, 0.605), rgba(90, 0, 0, 0.461));
+    color: #818181;
+    width: 60px;
+    height: 25px;
+    transition: 200ms ease-in-out;
+}
+.maximize{
+    background: linear-gradient(180deg, rgba(0, 11, 129, 0.605), rgba(0, 30, 90, 0.461));
+    color: #818181;
+    width: 40px;
+    height: 25px;
+    transition: 200ms ease-in-out;
+}
+.minimize {
+    background: linear-gradient(180deg, rgba(0, 11, 129, 0.605), rgba(0, 30, 90, 0.461));
+    color: #818181;
+    width: 40px;
+    height: 25px;
+    transition: 200ms ease-in-out;
+}
+body{
+    background-image: url('bg.png');
+}
+.close:hover {
+    background: linear-gradient(180deg, rgb(255, 119, 119), rgb(255, 65, 65));
+    box-shadow: 0 0 20px rgb(255, 62, 62);
+}
+.minimize:hover {
+    background: linear-gradient(180deg, rgb(111, 166, 255), rgb(65, 118, 233));
+    box-shadow: 0 0 20px rgb(66, 133, 244);
+}
+.maximize:hover, .minimize:hover, .close:hover{
+    cursor:default;
+}
+.windows-error-reporting {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    display: none;
+    transition: 100ms ease-in-out;
+}
+.contents {
+    padding: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #FEFEFE;
+    height: 140px;
+}
+.wer-header{
+    color: #3B5CBA;
+    font-weight: 500;
+}
+.wer-desc {
+    font-size: 14px;
+}
+.wer-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #FEFEFE;
+}
+.wer-footer > button {
+    background-color: #F2F2F2;
+    color: #000000;
+    border: 4px solid #1985B3;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+.wer-footer > button:hover {
+    background-color: #ffffff;
+    color: #1e1e1e;
+    box-shadow: 0 0 10px #1985B3;
+}
+.wer-icon{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: -10px;;
+}
+.title{
+    margin-left: 20px;
+}
+#cli:focus {
+    outline: none;
+}  
+.window:focus-within .title-bar {
+    background-color: rgba(56, 77, 239, 0.516);
+    box-shadow: 0 0 10px #0f0;
+}
+.window:focus-within .close {
+    background: linear-gradient(180deg, rgb(255, 119, 119), rgb(255, 65, 65));
+    color: #fff;
+}
+.window:focus-within .minimize {
+    background: linear-gradient(180deg, rgb(18, 97, 216), rgb(5, 47, 109));
+    color: #fff;
+}
+.windows-error-reporting:focus-within .title-bar {
+    background-color: rgba(56, 77, 239, 0.516);
+    box-shadow: 0 0 10px #0f0;
+}
+.windows-error-reporting:focus-within .close {
+    background: linear-gradient(180deg, rgb(255, 119, 119), rgb(255, 65, 65));
+    color: #fff;
+}
